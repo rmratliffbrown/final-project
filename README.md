@@ -1,4 +1,4 @@
-# Stroke predictor using Docker, AWS App Runner, and Flask
+# ML Stroke predictor using Docker, AWS App Runner, and Flask
 
 [![CI](https://github.com/rmratliffbrown/ml-stroke-predictor/actions/workflows/main.yml/badge.svg)](https://github.com/rmratliffbrown/ml-stroke-predictor/actions/workflows/main.yml)
 
