@@ -34,19 +34,45 @@ def predict():
     
     heart_disease = select("Have you had heart disease: ", ['Yes', 'No'])
     if (heart_disease == 'Yes'):
-        hypertension = 228
+        heart_disease = 228
     else: 
-        heart_disease = 3338
+        heart_disease = 3337
+        
+    work_type = select("What kind of work do you do: ", ['Private', 'Self-Employed', 'Govt_job', 'Children', 'Never_worked'])
+    if (work_type == 'Private'):
+        work_type = 2284
+    elif (work_type == 'Self-Employed'): 
+        work_type = 663
+    elif (work_type == 'Govt_job'): 
+        work_type = 535
+    elif (work_type == 'Children'): 
+        work_type = 69
+    else:
+        work_type = 14
         
     ever_married = select("Have you ever been married: ", ['Yes', 'No'])
     if (ever_married == 'Yes'):
         ever_married = 2710
     else: 
-        ever_married = 856
+        ever_married = 855
+        
+    Residence_type = select("What is your residence type: ", ['Urban', 'Rural'])
+    if (Residence_type == 'Urban'):
+        Residence_type = 1814
+    else: 
+        Residence_type = 1751
     
     avg_glucose_level = input("Enter your average glucose level: ", type=FLOAT)
     
     bmi = input("Enter your bmi: ", type=FLOAT)
+    
+    smoking_status = select("What is your smoking status: ", ['Never Smoked', 'Formerly Smoked', 'Smokes'])
+    if (smoking_status == 'Never Smoked'):
+        smoking_status = 1892
+    elif (smoking_status == 'Formerly Smoked'): 
+        smoking_status = 884
+    else: 
+        smoking_status = 789
     
     prediction = model.predict([[gender, age, hypertension, heart_disease, ever_married, avg_glucose_level, bmi]])
     output = round(prediction[0], 2)
@@ -55,9 +81,6 @@ def predict():
     
     if output == 1:
         put_text("You have been predicted to have a future stroke.")
-        put_table([['GENDER', 'AGE', 'HYPERTENSION', 'HEART-DISEASE', 'EVER-MARRIED', 'AVG-GLUCLOSE-LVL', 'BMI'],
-                  [gender, age, hypertension, heart_disease, ever_married, avg_glucose_level, bmi]]
-                  )
 
     else:
         put_text('You are not predicted to have a future stroke.')
