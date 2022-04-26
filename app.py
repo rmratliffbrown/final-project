@@ -5,17 +5,18 @@ from pywebio.input import *
 from pywebio.output import *
 import argparse
 from pywebio import start_server
-
 import pickle
 import numpy as np
-from sqlalchemy import null
+
+
 model = pickle.load(open('regression_rf.pkl', 'rb'))
+
 app = Flask(__name__)
 
 
 def predict():
     
-    put_text('Welcome to the Machine Learning Stroke Predictor')
+    put_text('Welcome to the Machine Learning Stroke Likehood Predictor')
     
     gender = select("Enter your gender: ", ['Male', 'Female'])
     if (gender == 'Male'):
