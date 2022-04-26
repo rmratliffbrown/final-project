@@ -1,4 +1,4 @@
-# ML Stroke predictor using Docker, AWS App Runner, and Flask
+# ML Microservice to Predict the Likelihood of a Stroke
 
 [![CI](https://github.com/rmratliffbrown/ml-stroke-predictor/actions/workflows/main.yml/badge.svg)](https://github.com/rmratliffbrown/ml-stroke-predictor/actions/workflows/main.yml)
 
