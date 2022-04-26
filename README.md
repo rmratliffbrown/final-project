@@ -11,4 +11,4 @@ The data was obtained from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/
 
 ## Demo 
 
-[Machine Learning Stroke Predictor](https://youtu.be/Y9bSNdFvXZ4)
+YouTube: [Machine Learning Stroke Predictor](https://youtu.be/Y9bSNdFvXZ4)
