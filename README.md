@@ -9,6 +9,6 @@ Application uses sklearn to predict if someone is likely to experience a stroke 
 The data was obtained from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
 
 
-## Demo Video
+## Demo
 
 [YouTube](##)
