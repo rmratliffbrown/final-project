@@ -9,7 +9,7 @@ from pywebio import start_server
 import pickle
 import numpy as np
 from sqlalchemy import null
-model = pickle.load(open('reg.pkl', 'rb'))
+model = pickle.load(open('regression_rf.pkl', 'rb'))
 app = Flask(__name__)
 
 
