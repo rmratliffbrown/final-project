@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 def predict():
     
-    put_text('Welcome to the Machine Learning Stroke Likehood Predictor')
+    put_text('Welcome to the Machine Learning Stroke Likelihood Predictor')
     
     gender = select("Enter your gender: ", ['Male', 'Female'])
     if (gender == 'Male'):
